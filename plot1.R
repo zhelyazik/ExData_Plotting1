@@ -12,7 +12,7 @@ period <- all_data[(all_data$Date=="1/2/2007")|(all_data$Date=="2/2/2007"),]
 period$datetime <- as.POSIXct(paste(period$Date,period$Time),format="%d/%m/%Y %H:%M:%S" )
 
 ##set graphic device
-png(filename = "plot4.png", width = 480, height = 480)
+png(filename = "plot1.png", width = 480, height = 480)
 
 ##plot graph
 with(period,hist(Global_active_power,xlab = "Global Active Power (kilowatts)", 
