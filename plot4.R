@@ -18,7 +18,7 @@ png(filename = "plot4.png", width = 480, height = 480)
 par(mfrow=c(2,2))
 with(period,{
   ##plot topleft
-  plot(datetime,Global_active_power, type ="l", xlab="",ylab = "Global Active Power (kilowatts)")  
+  plot(datetime,Global_active_power, type ="l", xlab="",ylab = "Global Active Power")  
   ##plot topright
   plot(datetime,Voltage, type = 'l')
   ##plot botomleft
