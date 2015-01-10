@@ -25,7 +25,7 @@ with(period,{
   plot(datetime,Sub_metering_1, type ="l",xlab="", ylab = "Energy sub metering")
   lines(datetime,Sub_metering_2, type ="l", col='red')
   lines(datetime,Sub_metering_3, type ="l", col='blue')
-  legend("topright", names(period)[7:9], col=c("black","red","blue"), lty= 1)
+  legend("topright", names(period)[7:9], col=c("black","red","blue"), lty= 1, bty = "n")
   ##plot botomright
   plot(datetime,Global_reactive_power, type = 'l')
   
