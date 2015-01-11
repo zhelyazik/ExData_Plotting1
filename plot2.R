@@ -15,7 +15,7 @@ period$datetime <- as.POSIXct(paste(period$Date,period$Time),format="%d/%m/%Y %H
 png(filename = "plot2.png", width = 480, height = 480)
 
 ##plot graph
-with(period,plot(datetime,Global_active_power, type ="l", ylab = "Global Active Power (kilowatts)"))
+with(period,plot(datetime,Global_active_power, type ="l",xlab="", ylab = "Global Active Power (kilowatts)"))
 
 dev.off()
 
